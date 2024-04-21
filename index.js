@@ -78,6 +78,9 @@ app.use((req, res, next) => {
 app.get("/", (req, res) => {
   res.render("home.ejs");
 });
+app.get("/home", (req, res) => {
+  res.render("home.ejs");
+});
 app.use("/signup", signup);
 app.use("/login", login);
 app.use("/logout", logout);
