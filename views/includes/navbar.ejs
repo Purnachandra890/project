@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <img
+      src="https://banner2.cleanpng.com/20180418/ije/kisspng-airbnb-logo-travel-social-network-5ad7745aa0f362.4000491915240694666593.jpg"
+      alt=""
+      style="height: 50px; margin-right: 10px"
+    />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+        <a class="nav-link" href="/listings">All Listings</a>
+        <a class="nav-link" href="/listings/new">Add New Listings</a>
+      </div>
+      <div class="d-flex justify-content-end">
+        <% if(!currentUser){ %>
+        <a class="nav-link mx-2" href="/signup">Signup</a>
+        <a class="nav-link mx-2" href="/login">Login</a>
+        <% } %> <% if(currentUser){ %>
+        <a class="nav-link mx-2" href="/logout">Logout</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
